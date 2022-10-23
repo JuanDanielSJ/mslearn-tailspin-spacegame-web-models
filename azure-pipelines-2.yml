@@ -1,4 +1,10 @@
 # ASP.NET Core
+- task: NuGetCommand@2
+  inputs:
+    command: 'restore'
+    restoreSolution: '**/*.sln'
+    feedsToUse: 'select'
+    vstsFeed: '81b97bc5-06b0-4073-92f9-dd6e043a926e/ab09b02f-082d-4f0b-a5e0-7fc7b69c6bda'
 # Build and test ASP.NET Core projects targeting .NET Core.
 # Add steps that run tests, create a NuGet package, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
